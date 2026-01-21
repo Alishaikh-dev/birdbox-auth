@@ -6,7 +6,7 @@ Secure authentication system with login and signup using FastAPI and password ha
 > *A simple and secure authentication app built with FastAPI.*
 
 BirdBox is a beginner-friendly authentication project that implements **user signup and login** using **secure password hashing**.
-All core logic is intentionally written in a **single file (`main.py`)** to keep the flow easy to read and understand.
+All core logic is intentionally written in a **single file (`bird_box.py`)** to keep the flow easy to read and understand.
 
 This project focuses on **doing authentication the right way**, without unnecessary complexity.
 
@@ -51,12 +51,9 @@ Traditional backend concepts, modern tooling.
 
 ## 📂 Project Structure
 
-```
-birdbox/
 │
-├── main.py        # Complete application (auth + DB + routes)
-└── README.md
-```
+├── bird_box.py        # Complete application (auth + DB + routes)
+
 
 Everything in one place. Easy to follow.
 
@@ -87,7 +84,7 @@ pip install fastapi uvicorn sqlalchemy passlib psycopg2
 ```
 
 ```bash
-uvicorn main:app --reload
+uvicorn bird_box:app --reload
 ```
 
 Open your browser at:
